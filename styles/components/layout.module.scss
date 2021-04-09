@@ -1,0 +1,50 @@
+.app-layout {
+  max-width: 100vw;
+
+  header {
+    // background-color: #460354;
+    max-width: 100vw;
+    overflow: hidden;
+    #desktop-header {
+      grid-template-columns: 35% 45% 20%;
+      #brand {
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .app-search {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: #41A841;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    .search-bar {
+      display: grid;
+      align-items: flex-start;
+      grid-template-columns: 80% 20%;
+    }
+
+    .user {
+      flex-wrap: wrap;
+    }
+
+    .brand-logo {
+      display: none;
+    }
+  }
+
+  main {
+    min-height: 100vh;
+    background-color: rgb(244, 245, 245);
+  }
+
+  footer {
+    background-color: #460354;
+  }
+}
